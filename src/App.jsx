@@ -16,6 +16,9 @@ function App() {
     setColumns(columns - 1)
   }
   const handleIncrementColumn = () => {
+    if (columns >= 9) {
+      return
+    }
     setColumns(columns + 1)
   }
   const handleDecrementRow = () => {
